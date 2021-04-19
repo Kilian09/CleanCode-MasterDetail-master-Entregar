@@ -15,7 +15,7 @@ public class CategoryListPresenter implements CategoryListContract.Presenter {
 
     public CategoryListPresenter(CatalogMediator mediator) {
         this.mediator = mediator;
-       // state = mediator.getCategoryListState();
+        state = mediator.getCategoryListState();
     }
 
     @Override

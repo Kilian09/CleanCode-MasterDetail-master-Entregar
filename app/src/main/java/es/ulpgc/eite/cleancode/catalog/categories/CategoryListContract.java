@@ -1,6 +1,9 @@
 package es.ulpgc.eite.cleancode.catalog.categories;
 
 import java.lang.ref.WeakReference;
+import java.util.List;
+
+import es.ulpgc.eite.cleancode.catalog.app.ProductItem;
 
 public interface CategoryListContract {
 
@@ -31,13 +34,8 @@ public interface CategoryListContract {
     }
 
     interface Model {
-        String getStoredData();
 
-        void onDataFromNextScreen(String data);
-
-        void onRestartScreen(String data);
-
-        void onDataFromPreviousScreen(String data);
+        List<ProductItem> fetchProductListData();
     }
 
 }

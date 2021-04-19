@@ -1,10 +1,12 @@
 package es.ulpgc.eite.cleancode.catalog.app;
 
+import es.ulpgc.eite.cleancode.catalog.categories.CategoryListState;
 import es.ulpgc.eite.cleancode.catalog.product.ProductDetailState;
 import es.ulpgc.eite.cleancode.catalog.products.ProductListState;
 
 public class CatalogMediator {
 
+  private CategoryListState categoryListState = new CategoryListState();
   private ProductListState productListState = new ProductListState();
   private ProductDetailState productDetailState = new ProductDetailState();
 
@@ -33,6 +35,10 @@ public class CatalogMediator {
 
   public ProductListState getProductListState() {
     return productListState;
+  }
+
+  public CategoryListState getCategoryListState() {
+    return categoryListState;
   }
 
   public ProductDetailState getProductDetailState() {
