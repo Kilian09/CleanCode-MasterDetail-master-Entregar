@@ -7,11 +7,11 @@
     android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/productContent"
+        android:id="@+id/categoryContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         style="?android:attr/textAppearanceLarge"
-        tools:text="@string/item_content"/>
+        tools:text="@string/category_content"/>
 
 </LinearLayout>
